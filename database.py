@@ -1,9 +1,12 @@
 import streamlit as st  # pip install streamlit
 from deta import Deta  # pip install deta
-
+from dotenv import load_dotenv
+import os
 
 # Load the environment variables
-DETA_KEY = st.secrets["DETA_KEY"]
+load_dotenv(".env")
+# DETA_KEY = st.secrets["DETA_KEY"]
+DETA_KEY = os.getenv("DETA_KEY")
 
 # Initialize with a project key
 deta = Deta(DETA_KEY)
