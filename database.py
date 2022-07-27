@@ -11,12 +11,12 @@ deta = Deta(DETA_KEY)
 # This is how to create/connect a database
 db = deta.Base("monthly_reports")
 
-
+#adding new items into the db
 def insert_period(period, incomes, expenses, comment):
     """Returns the report on a successful creation, otherwise raises an error"""
     return db.put({"key": period, "incomes": incomes, "expenses": expenses, "comment": comment})
 
-
+#retrieve all items
 def fetch_all_periods():
     """Returns a dict of all periods"""
     res = db.fetch()
