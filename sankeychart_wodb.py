@@ -129,3 +129,4 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 #     return periods
 
 
+# This is based on https://youtu.be/3egaMfE9388?list=PL7QI8ORyVSCaejt2LICRQtOTwmPiwKO2n

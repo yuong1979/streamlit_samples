@@ -115,3 +115,6 @@ if selected == "Data Visualization":
             fig = go.Figure(data)
             fig.update_layout(margin=dict(l=0, r=0, t=5, b=5))
             st.plotly_chart(fig, use_container_width=True)
+
+
+# This is based on https://youtu.be/3egaMfE9388?list=PL7QI8ORyVSCaejt2LICRQtOTwmPiwKO2n
