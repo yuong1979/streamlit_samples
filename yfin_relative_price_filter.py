@@ -23,3 +23,6 @@ if len(dropdown) > 0:
     # df = yf.download(dropdown, start, end)['Adj Close']
     df = relativeret(yf.download(dropdown, start, end)['Adj Close'])
     st.line_chart(df)
+
+
+# based on tutorial on https://youtu.be/Km2KDo6tFpQ
